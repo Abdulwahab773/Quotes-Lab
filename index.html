@@ -1,19 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Quotes-Lab</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Roboto&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
+
+    <!-- Navbar -->
+    <nav>
+        <div class="logo">Quotes-Lab</div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Quotes</a></li>
+            <li><a href="#">Categories</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+    </nav>
+
+    <section class="hero">
+        <h1>Quote of the Day:</h1>
+        <div class="quote-box">
+            <p id="quoteOfTheday"></p>
+            <span id="authorOfTheDay"></span>
+        </div>
+    </section>
+
+    <!-- Select Author Section -->
+    <div class="author-select-box">
+        <label>Choose an author:</label>
+        <div class="select-with-button">
+            <select id="author-select">
+                <option selected disabled>-- Select an Author --</option>
+            </select>
+            <button class="search-btn" id="search_btn" title="Search">
+                🔍
+            </button>
+        </div>
+    </div>
+
+
+    <div id="mainContainer" class="hidden">
+        <pre>Quotes by  <span id="author_name"></span></pre>
+        <div class="quotes-container" id="quotes_container">
+        </div>
+    </div>
 
 
 
 
-
-
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Quotes-Lab. All rights reserved.</p>
+    </footer>
     <script src="app.js"></script>
 </body>
+
 </html>
